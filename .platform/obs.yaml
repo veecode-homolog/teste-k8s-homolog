@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: app-teste-k8s-homolog-obs
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: veecode-homolog/teste-k8s-homolog
+    grafana/dashboard-selector: "app-teste-k8s-homolog-obs"
+    grafana/alert-label-selector: "alertname=app-teste-k8s-homolog-obs"
+    kong-manager/service-name: vkpr.app-exemple-devportal-obs-service-0.8081                    
+    kong-manager/instance: /kong-manager/api
+spec:
+  type: service
+  lifecycle: experimental
+  owner: admin
